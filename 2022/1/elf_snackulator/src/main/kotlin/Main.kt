@@ -1,7 +1,11 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import services.elfWithMostCaloricSnacks
+import services.topThreeElvesWithMostCaloricSnacks
+import store.ElfFileRepository
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main(args: Array<String>) {
+    var repo = ElfFileRepository("day01")
+    var mostPreparedElf = elfWithMostCaloricSnacks(repo)
+    println(mostPreparedElf.totalCalories())
+    var topThreeElves = topThreeElvesWithMostCaloricSnacks(repo)
+    println(topThreeElves.sumOf { it.totalCalories() })
 }
