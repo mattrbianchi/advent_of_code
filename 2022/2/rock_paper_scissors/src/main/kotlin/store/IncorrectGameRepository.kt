@@ -2,8 +2,6 @@ package store
 
 import entities.Game
 import entities.Shoot
-import entities.Outcome
-import entities.Strategy
 import java.io.File
 import java.lang.Exception
 
