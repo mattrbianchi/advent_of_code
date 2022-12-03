@@ -5,7 +5,7 @@ import entities.Snack
 import java.io.File
 
 class ElfFileRepository(file: String): AbstractElfRepository() {
-    private val elves: MutableList<Elf> = mutableListOf<Elf>()
+    private val elves: MutableList<Elf> = mutableListOf()
     init {
         load(file)
     }

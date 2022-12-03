@@ -1,7 +1,7 @@
 package entities
 
 class Elf {
-    private val snacks: MutableList<Snack> = mutableListOf<Snack>()
+    private val snacks: MutableList<Snack> = mutableListOf()
     fun addSnack(snack: Snack) {
         snacks.add(snack)
     }
